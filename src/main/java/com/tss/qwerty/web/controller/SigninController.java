@@ -11,17 +11,16 @@ import java.util.HashMap;
 @Controller
 @EnableAutoConfiguration
 public class SigninController {
-    /*
     @RequestMapping("/")
     public String home(){
-        return "Hello World!";
+        return "signin";
     }
 
-    @RequestMapping("/signin")
+   /* @RequestMapping("/signin")
     public String signin(){
         //map.put("signin","signin");
         return "/signin";
-    }
+    }*/
     @RequestMapping("/myclasses")
     public  String myclssses(){
         return "myclasses";
@@ -31,8 +30,7 @@ public class SigninController {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String result = "";
-        result = "myclasses";
+        result = "index";
         return result;
     }
-    */
 }
